@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'IranSansDN';
+    src: url('fonts/IranSansDN.ttf')
+}
+*{
+    font-family: "IranSansDN";
+}
+body {
+    padding: 50px;
+    background: #88FFF7;
+    direction: rtl;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+}
+
+.res{
+    display: flex;
+}
+
+.res .right {
+    text-align: center;
+    background: #0c836e;
+    border-radius: 50px;
+    box-shadow: -10px 10px 10px gray;
+}
+.left{
+    background:#13C9A8;
+    border-radius: 50px;
+    box-shadow: -10px 10px 10px gray;
+}
+
+@media screen and (max-width:760px) {
+    .res{
+        display: flex;
+        flex-direction: column;
+    }
+    body{
+        padding: 0px;
+    }
+    .left{
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .res .right{
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
+
+td{
+    border-radius: 20px;
+    text-align: center;
+}
+
+.img{
+    margin-top: 150px;
+    border-radius: 50%;
+    border: 20px double black;
+    transition: 1s;
+}
+.img:hover{
+    transform: rotate(360deg);
+    border: 20px double #13C9A8;
+    box-shadow: 0px 3px 10px black;
+}
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+}
+.info{
+    display:flex;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 15px;
+    margin-bottom: 7px;
+}
+.info-{
+    display:flex;
+    font-size: 18px;
+    margin-right: 15px;
+}
+.icon{
+    color: black;
+    transition: 1s;
+    text-shadow: none;
+}
+.icon:hover{
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 10px black;
+}
+a{
+    text-decoration-style:none;
+    color: black;
+}
+.social-network{
+    display:inline-flex;
+    color: black;
+    font-size: 2rem;
+    height: 50px;
+    margin-top: 16px;
+    text-shadow: none;
+}
+.telegram, .whatsapp, .instagram{
+    transition: 1s;
+}
+.telegram:hover{
+    border-radius: 25%;
+    background-color: white;
+    text-shadow: 2px 2px 2px gray;
+    color: #0088cc;
+    font-size: 3rem;
+}
+.whatsapp:hover{
+    color: #25d366;
+    font-size: 3rem;
+    text-shadow: 1px 1px 10px black;
+}
+.instagram:hover{
+    font-size: 3rem;
+    background: -webkit-linear-gradient(#505469, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);
+    -webkit-text-fill-color: transparent;
+}
+.address{
+    width: 85%;
+    margin: auto;
+    text-align: justify;
+}
+.header{
+    display: flex;
+    margin: 20px 20px 0px 10px;
+}
+
+
+.header span{
+    margin: 20px 20px;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+    transition: 1s;
+}
+.header-name{
+    width: 83%;
+    height: 35px;
+    margin-top: 10px;
+    background-color: #0c836e;
+    position: relative;
+    text-align: right;
+    border-radius: 20px;
+    box-shadow: 0px 1px 5px black;
+}
+.header-name label{
+    position:absolute;
+    margin:4px auto;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 8px;
+    text-shadow:none;
+}
+.bio{
+    margin: 5px 60px;
+    text-align: justify;
+}
+.topic{
+    text-align: right;
+    margin-right: 20px;
+}
+.topic1{
+    display:flex;
+    margin-right: 20px;
+}
+.topic span{
+    position: relative;
+    font-size: 1.4rem;
+    top: 18px;
+    color: #000;
+    
+}
+.proficiency table{
+    width: 85%;
+    margin: 0px auto;
+}
+.proficiency td{
+    background-color: #0c836e;
+    width: 50%;
+    box-shadow: 0px 0px 10px gray;
+    height: 35px;
+    transition: .5s;
+}
+.proficiency td:hover{
+    background-color: #13C9A8;
+    color: #000;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px black;
+}
+.project{
+    width: 60%;
+    height: 400px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.project-min{
+    display: flex;
+}
+.project-min div{
+    width: 100px;
+    height: 100px;
+    margin: 3px auto;
+    border-radius: 40%;
+    background-color: #0c836e;
+    transition: 1s;
+}
+.project-min div:hover{
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+}
